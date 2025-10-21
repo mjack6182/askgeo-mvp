@@ -1,0 +1,7 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Parkside green circle background -->
+  <circle cx="20" cy="20" r="20" fill="#006747"/>
+
+  <!-- White "P" letter -->
+  <path d="M13 10 H21 C24 10 26 12 26 15 C26 18 24 20 21 20 H16 V30 H13 V10 Z M16 13 V17 H21 C22.5 17 23 16 23 15 C23 14 22.5 13 21 13 H16 Z" fill="white"/>
+</svg>

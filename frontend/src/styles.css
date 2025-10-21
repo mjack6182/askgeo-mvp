@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    @apply rounded-2xl px-5 py-4 max-w-3xl shadow-sm;
+  }
+
+  .message-user {
+    @apply bg-parkside-600 text-white ml-auto;
+  }
+
+  .message-assistant {
+    @apply bg-gray-50 border border-gray-100 mr-auto;
+  }
+
+  .citation-badge {
+    @apply inline-flex items-center justify-center w-5 h-5 text-xs font-medium text-parkside-600 bg-parkside-100 rounded-full;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-parkside-600 text-white rounded-lg hover:bg-parkside-700 focus:outline-none focus:ring-2 focus:ring-parkside-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+}

@@ -1,0 +1,33 @@
+[project]
+name = "uwp-rag-backend"
+version = "0.1.0"
+description = "UW-Parkside RAG Chatbot Backend"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "openai>=1.10.0",
+    "chromadb>=0.4.22",
+    "tiktoken>=0.5.2",
+    "trafilatura>=1.6.3",
+    "httpx>=0.26.0",
+    "python-dotenv>=1.0.0",
+    "slowapi>=0.1.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
